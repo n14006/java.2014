@@ -71,6 +71,63 @@ class Ex2_2 extends Ex{
 		System.out.println("x % x = " + (x % y)); // x % yの値を表示 (剰余)
 	}
 }
+      class Ex2_3 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("数値を入力してください");
+
+		System.out.print("：");	      
+		int x = stdIn.nextInt();
+                
+                System.out.println(x); 
+        }
+      }
+
+      class Ex2_4 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("xの値に10を加減します");
+
+		System.out.print("xの値：");		
+		int x = stdIn.nextInt();
+			System.out.println("x + 10 = " + (x + 10));
+                        System.out.println("x - 10 = " + (x - 10)); 
+        }
+      }
+
+      class Ex2_5 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("xとyの和と平均を表示します。");
+
+		System.out.print("xの値：");		
+		double x = stdIn.nextDouble();
+		System.out.print("yの値：");		
+		double y = stdIn.nextDouble();
+	
+                System.out.println("和: " + (x + y));
+                System.out.println("平均: " + ((x + y) / 2)); 
+        }
+      }
+
+      class Ex2_6 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("三角形の面積をもとめます。");
+
+		System.out.print("底辺：");		
+		double x = stdIn.nextDouble();
+		System.out.print("高さ：");		
+		double y = stdIn.nextDouble();
+	
+                System.out.println("面積: " + (x * y) / 2);
+        }
+      }
+
 
 class Ex2_000 extends Ex{
 	void execute(){
@@ -85,16 +142,25 @@ class Ex2_000 extends Ex{
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
-/*
-		a = new Ex2_0();
-		a = new Ex2_00();
-*/
-		a = new Ex2_000();
+                a = new Ex2_00();
+                a.execute(); 
+                a = new Ex2_3();
+                a.execute(); 
+                a = new Ex2_4();
+                a.execute();
+                a = new Ex2_5();
+                a.execute();
+                a = new Ex2_6();
+                a.execute(); 
+                /*
+                a = new Ex2_000();
+                a.execute(); 
+                a = new Ex2_0();
 		a.execute();
 		a = new Ex2_1();
 		a.execute();
 		a = new Ex2_2();
 		a.execute();
-
+*/
 	}
 }
