@@ -106,21 +106,50 @@ class Ex3{
           }   
         }
 	
-        public String e
-        
-        return "dummy";
-	}
-
 	public int ex3_11(int a, int b, int c){
-		return 1000;
-	}
+         
+          int[] n = {a,b,c};  
+          int min = n[0];
+
+          for (int i = 0; i < n.length; i++){
+            if (min > n[i]){
+              min = n[i];
+            }
+          }
+            return min; 
+            
+        }
 
 	public int ex3_12(int a, int b, int c){
-		return 1000;
-	}
 
-	public String ex3_13(int a){
-		return "dummy";
-	}
-}
+          int min = Math.min(a,b);
+          int mid = Math.max(min,c);
 
+            if (a > b){
+              return Math.min(a,mid); 
+            }else{
+              return Math.min(b,mid); 
+            }   
+        
+        }
+
+        public String ex3_13(int a){
+          if ((a <=12) && (a > 1)){
+            if ((a == 12) || (a <= 2)){
+              return "冬";
+            }
+            else if (a <= 5){
+              return "春";
+            }
+            else if (a <= 8){
+              return "夏";
+            }
+            else {
+              return "秋";
+            }
+          }
+          else {
+            return "範囲(1～12)外の値です";
+          }
+        }
+        }
