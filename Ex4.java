@@ -1,13 +1,18 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 class Ex4{
 
 	public int [] ex4_1(int [] a){
-		
-		return a;
 
-	}
+          Arrays.sort(a);
+          return a;
+        }
+        
 
 	public int [] ex4_2(int [] a){
-		
+
+	  bubbleSort(a,true);	
 		return a;
 
 	}
