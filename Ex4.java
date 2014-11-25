@@ -12,7 +12,6 @@ class Ex4{
 
 	public int [] ex4_2(int [] a){
 
-	  bubbleSort(a,true);	
 		return a;
 
 	}
